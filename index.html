@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calopsitas — Tudo sobre esses curiosos companheiros</title>
+<meta name="description" content="Guia completo sobre calopsitas: cuidados, alimentação, comportamento e curiosidades. Site responsivo, moderno e dinâmico.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#0f1724;--card:#0b1220;--muted:#9aa7b2;--accent:#FFB86B;--accent-2:#FFD8A8;--glass: rgba(255,255,255,0.04);--glass-2: rgba(255,255,255,0.06);--radius:14px;--transition: 300ms cubic-bezier(.2,.9,.3,1);color-scheme: dark; }
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg) 0%, #07101a 100%);color:#e6eef6;-webkit-font-smoothing:antialiased}
+header{position:fixed;left:0;right:0;top:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);backdrop-filter: blur(6px);z-index:40}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{height:44px;width:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#FF9E5A);display:grid;place-items:center;box-shadow:0 6px 20px rgba(255,160,90,0.08)}
+nav{display:flex;gap:14px;align-items:center}
+nav a{color:var(--accent-2);text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:600;opacity:0.95;transition:var(--transition)}
+nav a:hover{transform:translateY(-4px);background:var(--glass)}
+.container{max-width:1100px;margin:0 auto;padding:110px 22px 80px}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+.hero .copy h1{font-size:46px;line-height:1.02;margin:0 0 12px}
+.hero .copy p{color:var(--muted);font-size:16px;margin:0 0 20px}
+.cta{display:flex;gap:12px}
+.btn{background:linear-gradient(90deg,var(--accent),#ff9a4a);border:none;padding:12px 18px;border-radius:12px;font-weight:700;color:#07101a;cursor:pointer;box-shadow:0 8px 24px rgba(255,150,80,0.12);transition:var(--transition)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent-2)}
+.hero .visual{border-radius:16px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);box-shadow: 0 8px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+.visual img{display:block;width:100%;height:100%;object-fit:cover}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);transition:var(--transition);box-shadow:0 6px 20px rgba(3,8,20,0.6)}
+.card:hover{transform:translateY(-8px)}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+section{margin-top:48px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.section-head h2{margin:0}
+.about{display:grid;grid-template-columns:1fr 360px;gap:26px;align-items:start}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:12px;display:block}
+.tips{display:flex;flex-direction:column;gap:10px}
+.tip{display:flex;gap:12px;align-items:flex-start;background:var(--glass);padding:12px;border-radius:10px}
+.carousel{position:relative;overflow:hidden;border-radius:12px;padding:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+.slides{display:flex;gap:12px;transition:transform 600ms cubic-bezier(.2,.9,.3,1)}
+.slide{min-width:100%;padding:20px}
+footer{padding:32px 22px;background:transparent;border-top:1px solid rgba(255,255,255,0.03);margin-top:60px}
+.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:1100px;margin:0 auto}
+@media (max-width:980px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){nav{display:none}.grid{grid-template-columns:1fr}.gallery img{height:120px}}
+.muted{color:var(--muted)}
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass-2);font-weight:600}
+.toggle{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:12px;background:rgba(255,255,255,0.02);cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<div class="mark" aria-hidden>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c1 2 3 2 4 3s2 3 1 5c-1 2-3 3-4 4s-3 0-4-1-2-3-1-5 3-4 4-6z" fill="#fff" opacity=".9"/></svg>
+</div>
+<div>
+<div style="font-weight:700">Calopsitas & Cia</div>
+<div style="font-size:12px;color:var(--muted);margin-top:2px">Guia completo para amantes de calopsitas</div>
+</div>
+</div>
+<nav aria-label="Menu principal">
+<a href="#sobre">Sobre</a>
+<a href="#cuidados">Cuidados</a>
+<a href="#galeria">Galeria</a>
+<a href="#videos">Vídeos</a>
+</nav>
+<div style="display:flex;gap:10px;align-items:center">
+<div class="toggle" id="themeToggle">🌗 Modo</div>
+</div>
+</header>
+
+<main class="container">
+<!-- Hero -->
+<section class="hero" aria-labelledby="home-title">
+<div class="copy">
+<h1 id="home-title">Calopsitas: cuidados, comportamento e curiosidades</h1>
+<p>Aprenda como cuidar da sua calopsita, montar ambiente ideal, alimentação correta e entender o comportamento desse pássaro curioso e afetuoso.</p>
+<div class="cta">
+<button class="btn" onclick="document.getElementById('cuidados').scrollIntoView({behavior:'smooth'})">Ver Cuidados</button>
+<button class="btn ghost" onclick="document.getElementById('galeria').scrollIntoView({behavior:'smooth'})">Ver Galeria</button>
+</div>
+</div>
+<div class="visual" aria-hidden>
+<img src="https://img.freepik.com/fotos-gratis/fotografia-vertical-de-uma-adoravel-gaivota_181624-42514.jpg?semt=ais_hybrid&w=740&q=80" alt="Calopsita laranja em close"/>
+</div>
+</section>
+
+<!-- Cards iniciais -->
+<div class="grid" aria-hidden>
+<div class="card"><h3>Habitat ideal</h3><p>Cage espaçosa, poleiros de vários diâmetros, brinquedos e posição próxima à família - mas sem correntes de ar.</p></div>
+<div class="card"><h3>Alimentação</h3><p>Ração de qualidade + frutas e verduras frescas (em pequenas quantidades). Evite abacate, chocolate e sal em excesso.</p></div>
+<div class="card"><h3>Socialização</h3><p>Calopsitas são sociais: precisam de atenção diária e estímulos para não desenvolver comportamentos estereotipados.</p></div>
+</div>
+
+<!-- Sobre -->
+<section id="sobre">
+<div class="section-head"><h2>Sobre as calopsitas</h2><div class="muted">(Nymphicus hollandicus)</div></div>
+<div class="about">
+<div>
+<p class="muted">As calopsitas são aves australianas conhecidas pela crista elegante, personalidade curiosa e vocalizações encantadoras. Elas vivem em média 12–20 anos em cativeiro com bons cuidados.</p>
+<h3 style="margin-top:14px">Comportamento</h3>
+<p class="muted">Comunicativas e brincalhonas, aprendem a imitar sons e podem criar vínculos fortes com o tutor. Observações diárias ajudam a identificar sinais de estresse.</p>
+<h3 style="margin-top:12px">Reprodução</h3>
+<p class="muted">Antes de planejar reprodução, garanta espaço, conhecimento e compromisso — reprodução exige cuidados específicos e responsabilidade.</p>
+</div>
+<aside style="background:var(--glass);padding:14px;border-radius:12px">
+<h4 style="margin:0 0 8px">Ficha rápida</h4>
+<ul style="margin:0;padding-left:18px;color:var(--muted)">
+<li>Peso: 80–120 g</li>
+<li>Comprimento: 30–33 cm</li>
+<li>Expectativa: 12–20 anos</li>
+<li>Dieta: sementes, pellets, frutas e verduras</li>
+</ul>
+</aside>
+</div>
+</section>
+
+<!-- Cuidados -->
+<section id="cuidados">
+<div class="section-head">
+<h2>Cuidados essenciais</h2>
+<div class="muted">rotina diária e semanal</div>
+</div>
+
+<div class="tips">
+<!-- Tip Higiene -->
+<div class="tip">
+<strong>Higiene:</strong>
+1. Banho: As calopsitas adoram tomar banho! Você pode oferecer um recipiente com água rasa algumas vezes por semana ou borrifar levemente com um spray de água morna. O banho ajuda a remover poeira e mantém as penas bonitas.<br>
+2. Limpeza da gaiola: A gaiola deve ser limpa com frequência — troque o forro do fundo diariamente e lave os poleiros, comedouros e brinquedos pelo menos uma vez por semana com água e sabão neutro.<br>
+3. Penas e unhas: Durante a troca de penas (muda), a calopsita pode precisar de mais atenção com banhos e alimentação rica em nutrientes. As unhas podem ser aparadas por um veterinário ou com cuidado especial.<br>
+4. Alimentação limpa: Sempre ofereça água fresca e troque os alimentos diariamente.<br>
+5. Ambiente saudável: Evite locais com fumaça, cheiros fortes ou correntes de ar.
+</div>
+<!-- Tip Alimentação -->
+<div class="tip">
+<strong>Alimentação equilibrada:</strong>
+1. Ração balanceada: Use ração extrusada específica para calopsitas.<br>
+2. Sementes e grãos: Como complemento, em pequenas quantidades.<br>
+3. Frutas e verduras frescas: Ofereça diariamente, lave bem e retire sobras.<br>
+4. Água limpa sempre.<br>
+5. O que evitar: Chocolate, café, sal, frituras, álcool, leite ou temperos.<br>
+6. Suplementos: Consulte veterinário quando necessário.
+</div>
+<!-- Tip Exercício -->
+<div class="tip">
+<strong>Exercício:</strong>
+1. Tempo fora da gaiola: Pelo menos 1–2 horas por dia em ambiente seguro.<br>
+2. Brinquedos variados: Madeira natural, cordas, sininhos, espelhos.<br>
+3. Interação com o dono: Converse, ensine truques e permita ombro de vez em quando.<br>
+4. Voos controlados: Pratique voos curtos em local seguro.<br>
+5. Estímulos mentais: Esconda petiscos em locais diferentes.<br>
+6. Descanso equilibrado: 10–12 horas de sono, cobrir gaiola ajuda.
+</div>
+<!-- Tip Saúde -->
+<div class="tip">
+<strong>Saúde:</strong>
+1. Visitas ao veterinário: Pelo menos uma vez ao ano.<br>
+2. Sinais de boa saúde: Ativa, canta, se alimenta bem, penas lisas, fezes normais, respiração silenciosa.<br>
+3. Sintomas de alerta: Falta de apetite, penas arrepiadas, sonolência, secreções, dificuldade respiratória ou perda de equilíbrio.<br>
+4. Alimentação e higiene: Mantêm doenças afastadas.<br>
+5. Vacinação e vermifugação: Conforme orientação veterinária.<br>
+6. Evite estresse: Mudanças bruscas, barulhos altos, falta de atenção.<br>
+7. Sol e ar fresco: Luz solar indireta e ar puro diariamente.
+</div>
+</div>
+
+<div style="display:flex;gap:18px;margin-top:20px;flex-wrap:wrap">
+<div class="card" style="flex:1;min-width:260px">
+<h3>Montando o ambiente</h3>
+<p class="muted">Escolha gaiolas com espaço para voar lateralmente. Evite grades muito estreitas; prefira poleiros naturais e brinquedos de madeira não tóxica.</p>
+</div>
+<div class="card" style="flex:1;min-width:260px">
+<h3>Brinquedos e enriquecimento</h3>
+<p class="muted">Rochas para bicar, balanços e puzzles aumentam o bem-estar. Troque brinquedos regularmente para manter o interesse.</p>
+</div>
+</div>
+</section>
+
+<!-- Galeria -->
+<section id="galeria">
+<div class="section-head"><h2>Galeria</h2><div class="muted">Fotos de calopsitas</div></div>
+<div class="gallery" aria-live="polite">
+<img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia8155/como-amansar-calopsitas-cpt.jpg" alt="Calopsita em poleiro">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0csS61s6KL1GkWDbO038xCn1NnXSZC3NVA&s" alt="Calopsita olhando para câmera">
+<img src="https://caesegatos.com.br/wp-content/uploads/2022/09/calopsita-1-1024x664.png" alt="Calopsita colorida">
+</div>
+</section>
+
+<!-- Seção Vídeos -->
+<section id="videos" style="margin-top:40px">
+  <div class="section-head">
+    <h2>Vídeos</h2>
+    <div class="muted">Assista às dicas em vídeo</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;flex-wrap:wrap">
+    <div style="position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+              title="Vídeo 1 sobre calopsitas" 
+              allowfullscreen></iframe>
+    </div>
+    <div style="position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;">
+      <iframe src="https://www.youtube.com/shorts/78Ye7tQPkpo" 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+              title="Vídeo 2 sobre calopsitas" 
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section style="margin-top:40px">
+<div class="section-head"><h2>Depoimentos</h2><div class="muted">Quem ama calopsitas conta</div></div>
+<div class="carousel" aria-roledescription="carousel">
+<div class="slides" id="slides">
+<div class="slide"><blockquote>"Minha calopsita mudou completamente com as dicas deste guia — mais brincalhona e saudável!"<footer style="margin-top:8px;color:var(--muted)">— Ana, tutora</footer></blockquote></div>
+<div class="slide"><blockquote>"As instruções sobre alimentação me ajudaram a montar uma dieta equilibrada. Recomendo!"<footer style="margin-top:8px;color:var(--muted)">— Lucas, criador</footer></blockquote></div>
+<div class="slide"><blockquote>"Ótimas ideias de brinquedos — minha calopsita nunca mais ficou entediada."<footer style="margin-top:8px;color:var(--muted)">— Marina, adestradora</footer></blockquote></div>
+<div class="slide"><blockquote>"Segui as dicas de higiene e minha calopsita está muito mais ativa!"<footer style="margin-top:8px;color:var(--muted)">— Pedro, tutor</footer></blockquote></div>
+<div class="slide"><blockquote>"O guia ajudou na socialização e agora minha calopsita interage melhor com a família."<footer style="margin-top:8px;color:var(--muted)">— Carla, criadora</footer></blockquote></div>
+<div class="slide"><blockquote>"Adorei as sugestões de brinquedos e enriquecimento mental. Excelente material!"<footer style="margin-top:8px;color:var(--muted)">— Ricardo, adestrador</footer></blockquote></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="footer-grid">
+<div style="display:flex;gap:12px;align-items:center">
+<div style="font-weight:700">Calopsitas & Cia</div>
+<div class="muted">© <span id="year"></span> Todos os direitos</div>
+</div>
+<div class="muted">Feito com ❤️ — dicas são informativas, consulte um veterinário especializado em aves para casos de saúde.</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Carousel
+(function(){
+const slides=document.getElementById('slides');let idx=0;const total=slides.children.length;
+function show(i){slides.style.transform=`translateX(-${i*100}%)`;}
+let t=setInterval(()=>{idx=(idx+1)%total;show(idx)},4500);
+slides.parentElement.addEventListener('mouseenter',()=>clearInterval(t));
+slides.parentElement.addEventListener('mouseleave',()=>t=setInterval(()=>{idx=(idx+1)%total;show(idx)},4500));
+})();
+
+// Tema
+const themeToggle=document.getElementById('themeToggle');let light=false;
+themeToggle.addEventListener('click',()=>{
+light=!light;
+if(light){
+document.documentElement.style.setProperty('--bg','#f6f8fb');
+document.documentElement.style.setProperty('--card','#ffffff');
+document.documentElement.style.setProperty('--muted','#425056');
+document.documentElement.style.setProperty('--accent','#ff8a42');
+document.documentElement.style.setProperty('--accent-2','#7c4d1f');
+document.documentElement.style.setProperty('color-scheme','light');
+document.body.style.color='#09121a';
+}else{
+document.documentElement.style.setProperty('--bg','#0f1724');
+document.documentElement.style.setProperty('--card','#0b1220');
+document.documentElement.style.setProperty('--muted','#9aa7b2');
+document.documentElement.style.setProperty('--accent','#FFB86B');
+document.documentElement.style.setProperty('--accent-2','#FFD8A8');
+document.documentElement.style.setProperty('color-scheme','dark');
+document.body.style.color='#e6eef6';
+}
+});
+</script>
+</body>
+</html>
